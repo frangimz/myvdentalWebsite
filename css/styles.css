@@ -16,12 +16,12 @@
     padding-left: 10px;
 }
 
-main{
+.fondoIndex{
     height: 81vh;
     width: 100%;
     position: relative;
     background: linear-gradient(to right, transparent, white),
-    url("../img/fondo.jpg");
+    url("../img/fondo2.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -62,10 +62,75 @@ footer{
     height: 50px;
     background-color: gray;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 footer p{
     margin: 0;
+}
+
+footer div{
+    padding: 10px;
+    width: 33.33%;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+}
+
+.copyright{
+    display: flex;
+    justify-content: right;
+}
+
+.logoInsta{
+    width: 30px;
+}
+
+
+/*About us*/
+
+.portadaAboutus{
+    height: 81vh;
+    width: 100%;
+    display: flex;
+}
+
+.portadaAboutus section{
+    width: 50%;
+}
+
+.story{
+    padding: 10px;
+}
+
+body{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.story{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.story p {
+    width: 80%;
+}
+
+.imgStory{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgStory img{
+    width: 80%;
+    /*border-radius: 10%;*/
+    box-shadow: 13px 10px 5px 0px gray;
 }
