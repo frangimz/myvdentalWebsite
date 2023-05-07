@@ -102,6 +102,18 @@ footer{
     max-width: 1600px;
 }
 
+.iconoWhatsapp{
+    width: 70px;
+    height: 70px;
+}
+
+#whatsapp {
+    z-index: 2;
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+ }
+
 /*About us*/
 
 .portadaAboutus{
@@ -119,7 +131,8 @@ footer{
     padding: 10px;
 }
 
-body{
+
+.bodyFullScreen{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -191,13 +204,28 @@ body{
     height: 50px;
 }
 
-.iconoWhatsapp{
-    width: 70px;
-    height: 70px;
+/*Services*/
+
+.portadaServices{
+    height: auto;
+    width: 100%;
+    display: flex;
 }
 
-#whatsapp {
-    position: fixed;
-    bottom: 80px;
-    right: 40px;
- }
+.portadaServices section{
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 5px 20px 5px;
+}
+
+.portadaServices .services *{
+    width: 97%;
+}
+
+#carouselExampleInterval{
+    width: 90%;
+}
