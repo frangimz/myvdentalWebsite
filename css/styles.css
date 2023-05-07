@@ -17,17 +17,18 @@
 }
 
 .fondoIndex{
-    height: 81vh;
+    height: 100%;
     width: 100%;
     position: relative;
     background: linear-gradient(to right, transparent, white),
     url("../img/fondo2.jpg");
     background-position: center;
     background-size: cover;
+    min-height: 500px;
 }
 
 .backg{
-    height: 80vh;
+    height: 100%;
     width: 100%;
     position: absolute;
 }
@@ -37,7 +38,7 @@
     opacity: 50%;
     object-fit: cover;
     width: 100%;
-    height: 80vh;
+    height: 100%;
 }
 
 .slogan{
@@ -62,15 +63,23 @@ footer{
     height: 50px;
     background-color: gray;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
-footer p{
+.pie{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1600px;
+}
+
+.pie p{
     margin: 0;
 }
 
-footer div{
+.pie div{
     padding: 10px;
     width: 33.33%;
 }
@@ -89,6 +98,9 @@ footer div{
     width: 30px;
 }
 
+.container-fluid{
+    max-width: 1600px;
+}
 
 /*About us*/
 
@@ -96,6 +108,7 @@ footer div{
     height: 81vh;
     width: 100%;
     display: flex;
+    min-height: 500px;
 }
 
 .portadaAboutus section{
@@ -110,6 +123,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    height: 100vh;
 }
 
 .story{
@@ -134,3 +148,56 @@ body{
     /*border-radius: 10%;*/
     box-shadow: 13px 10px 5px 0px gray;
 }
+
+.textDeco{
+    font-size: 2rem;
+}
+
+/*Contact*/
+
+.portadaContact{
+    height: 81vh;
+    width: 100%;
+    display: flex;
+    min-height: 500px;
+}
+
+.portadaContact section{
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.ubicacion{
+    width: 80%;
+}
+
+.ubicacion iframe{
+    height: 350px;
+    width: 90%;
+    min-width: 500px;
+}
+
+.telContact,.horaContact{
+    padding: 10px;
+}
+
+.iconoWhatsappContact{
+    width: 50px;
+    height: 50px;
+}
+
+.iconoWhatsapp{
+    width: 70px;
+    height: 70px;
+}
+
+#whatsapp {
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+ }
