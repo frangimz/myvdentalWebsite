@@ -273,5 +273,11 @@ footer{
 }
 
 #carouselExampleInterval{
-    width: 90%;
+    width: 80%;
+    /*height: 600px;*/
+}
+
+#carouselExampleInterval div div img{
+    height: 60vh;
+    object-fit: cover;
 }
