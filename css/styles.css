@@ -3,7 +3,7 @@
 }
 
 .navbar{
-    height: 80px;
+    height: auto;
 }
 
 .navbar-bg-color{
@@ -22,7 +22,6 @@
     position: relative;
     background: linear-gradient(to right, transparent, white),
     url("../img/fondo2.jpg");
-    background-position: center;
     background-size: cover;
     min-height: 95vh;
 }
@@ -46,7 +45,7 @@
     left: 50%;
     top: 25vh;
     height: auto;
-    width: 550px;
+    width: 50%;
     /*background-color: white;*/
     padding: 10px;
     border-radius: 20px;
@@ -114,12 +113,12 @@ footer{
     right: 5vh;
  }
 
- .fade-in-image { animation: fadeIn 5s; }
+.fade-in-image { animation: fadeIn 5s; }
 
- @keyframes fadeIn {
+@keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
-  }
+}
 
 .bodyIndex{
     display: flex;
@@ -153,8 +152,8 @@ footer{
 }
 
 .sonrisas img{
-    width: 20;
-    height: 250px;
+    width: 24%;
+    height: 28vh;
     padding: 0;
     margin: 20px 0 20px 0;
     border-radius: 10px;
@@ -280,4 +279,88 @@ footer{
 #carouselExampleInterval div div img{
     height: 60vh;
     object-fit: cover;
+}
+
+/*Media Queries*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .navbar-bg-color{
+        background-color: violet;
+    }
+    .sonrisas{
+        flex-wrap: wrap;
+    }
+    .sonrisas img{
+        width: 90%;
+        height: 50vh;
+    }
+    .slogan{
+        left: 30%;
+        top: 30vh;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slogan p{
+        font-size: 2rem;
+    }
+    .frasePublicitaria{
+        font-size: 1.5rem;
+        width: 70%;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .navbar-bg-color{
+        background-color: green;
+    }
+    .sonrisas{
+        flex-wrap: wrap;
+    }
+    .sonrisas img{
+        width: 45%;
+    }
+    .slogan{
+        width: 50%;
+    }
+
+    .slogan p{
+        font-size: 2rem;
+    }
+    .frasePublicitaria{
+        font-size: 1.5rem;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .navbar-bg-color{
+        background-color: white;
+    }
+    .slogan p{
+        font-size: 2.2rem;
+    }
+    .frasePublicitaria{
+        font-size: 1.8rem;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .navbar-bg-color{
+        background-color: red;
+    }
+    .slogan p{
+        font-size: 2.7rem;
+    }
+    .frasePublicitaria{
+        font-size: 2.2rem;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .navbar-bg-color{
+        background-color: blue;
+    }
 }
