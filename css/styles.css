@@ -64,6 +64,8 @@ footer{
     display: flex;
     justify-content: center;
     flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .pie{
@@ -80,7 +82,13 @@ footer{
 
 .pie div{
     padding: 10px;
-    width: 33.33%;
+}
+
+.brand,.copyright{
+    width: 40%;
+}
+.redes{
+    width: 20%;
 }
 
 .redes{
@@ -129,7 +137,7 @@ footer{
 .publicidad{
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, lightgray 100%);
-    height: 500px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,20 +170,17 @@ footer{
 /*About us*/
 
 .portadaAboutus{
-    height: 81vh;
+    height: auto;
     width: 100%;
     display: flex;
-    min-height: 500px;
-}
-
-.portadaAboutus section{
-    width: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
 .story{
     padding: 10px;
+    width: 50%;
 }
-
 
 .bodyFullScreen{
     display: flex;
@@ -186,15 +191,17 @@ footer{
 
 .story{
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .story p {
-    width: 80%;
+    width: 90%;
 }
 
 .imgStory{
+    width: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -214,13 +221,16 @@ footer{
 /*Contact*/
 
 .portadaContact{
-    height: 81vh;
+    height: auto;
     width: 100%;
     display: flex;
-    min-height: 500px;
 }
 
-.portadaContact section{
+.contact{
+    min-width: 350px;
+}
+
+.contact,.ubicacion{
     width: 50%;
     padding: 10px;
     display: flex;
@@ -237,11 +247,25 @@ footer{
 .ubicacion iframe{
     height: 350px;
     width: 90%;
-    min-width: 500px;
+    /*min-width: 500px;*/
+}
+
+.ubicacion__title{
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .telContact,.horaContact{
     padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .iconoWhatsappContact{
@@ -249,56 +273,93 @@ footer{
     height: 50px;
 }
 
+.telContact__title{
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.horaContact__title{
+    width: 100%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 /*Services*/
 
 .portadaServices{
     height: auto;
-    width: 100%;
-    display: flex;
-}
-
-.portadaServices section{
-    width: 50%;
-    padding: 10px;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding: 20px 5px 20px 5px;
+    margin-top: 10px;
+}
+
+.services{
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .portadaServices .services *{
     width: 97%;
 }
 
+.servicesImagenes{
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #carouselExampleInterval{
-    width: 80%;
-    /*height: 600px;*/
+    width: 90%;
 }
 
 #carouselExampleInterval div div img{
-    height: 60vh;
+    height: 50vh;
     object-fit: cover;
+    width: 100%;
 }
 
 /*Media Queries*/
-
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 340px){
     .navbar-bg-color{
-        background-color: violet;
+        background-color: fuchsia;
     }
+
+    .logo{
+        height: 30px;
+    }
+
+    .brand,.copyright{
+        font-size: 0.75rem;
+    }
+
+    /*Index*/
     .sonrisas{
         flex-wrap: wrap;
     }
     .sonrisas img{
         width: 90%;
-        height: 50vh;
+        height: 40vh;
     }
     .slogan{
-        left: 30%;
+        left: 10%;
         top: 30vh;
-        width: 300px;
+        width: 85%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -311,12 +372,122 @@ footer{
         font-size: 1.5rem;
         width: 70%;
     }
+
+    /*Services*/
+    .portadaServices{
+        flex-direction: column;
+    }
+
+    .services,.servicesImagenes{
+        width: 100%;
+        height: 100vh;
+    }
+
+    /*About Us*/
+    .portadaAboutus{
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+
+    .imgStory,.story{
+        width: 100%;
+        min-height: 90vh;
+    }
+
+    /*Contact*/
+    .portadaContact{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .contact{
+        width: 100%;
+        min-height: 70vh;
+    }
+
+    .ubicacion{
+        width: 100%;
+        min-height: 80vh;
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 340px) {
+    .navbar-bg-color{
+        background-color: violet;
+    }
+
+    .logo{
+        height: 40px;
+    }
+
+    /*Index*/
+    .sonrisas{
+        flex-wrap: wrap;
+    }
+    .sonrisas img{
+        width: 90%;
+        height: 50vh;
+    }
+    .slogan{
+        left: 10%;
+        top: 30vh;
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slogan p{
+        font-size: 2rem;
+    }
+    .frasePublicitaria{
+        font-size: 1.5rem;
+        width: 70%;
+    }
+
+    /*Services*/
+    .portadaServices{
+        flex-direction: column;
+    }
+
+    .services,.servicesImagenes{
+        width: 100%;
+        height: 100vh;
+    }
+
+    /*About Us*/
+    .portadaAboutus{
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+
+    .imgStory,.story{
+        width: 100%;
+        min-height: 90vh;
+    }
+
+    /*Contact*/
+    .portadaContact{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .contact{
+        width: 100%;
+        min-height: 70vh;
+    }
+
+    .ubicacion{
+        width: 100%;
+        min-height: 80vh;
+    }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
     .navbar-bg-color{
         background-color: green;
     }
+    /*Index*/
     .sonrisas{
         flex-wrap: wrap;
     }
@@ -333,17 +504,64 @@ footer{
     .frasePublicitaria{
         font-size: 1.5rem;
     }
+    /*Services*/
+    .portadaServices{
+        flex-direction: column;
+    }
+
+    .services,.servicesImagenes{
+        width: 100%;
+        min-height: 90vh;
+    }
+    /*About Us*/
+    .portadaAboutus{
+        flex-direction: column-reverse;
+        justify-content: space-around;
+    }
+
+    .imgStory,.story{
+        width: 100%;
+        min-height: 90vh;
+    }
+
+    /*Contact*/
+    .portadaContact{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .contact{
+        width: 100%;
+        min-height: 70vh;
+    }
+
+    .ubicacion{
+        width: 100%;
+        min-height: 80vh;
+    }
+
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .navbar-bg-color{
         background-color: white;
     }
+    /*Index*/
     .slogan p{
         font-size: 2.2rem;
     }
     .frasePublicitaria{
         font-size: 1.8rem;
+    }
+
+    /*Services*/
+    #carouselExampleInterval div div img{
+        height: 40vh;
+    }
+
+    /*About Us*/
+    .story p {
+        font-size: 0.75rem;
     }
 }
 /* Large devices (laptops/desktops, 992px and up) */
@@ -351,6 +569,7 @@ footer{
     .navbar-bg-color{
         background-color: red;
     }
+    /*Index*/
     .slogan p{
         font-size: 2.7rem;
     }
