@@ -160,17 +160,15 @@ footer{
 }
 
 .sonrisas div{
-    max-width: 24%;
-    height: 25vh;
+    width: 23%;
     padding: 0;
     margin: 20px 0 20px 0;
 }
 
 .sonrisas div img{
-    height: 100%;
+    width: 100%;
     object-fit: cover;
     border-radius: 10px;
-    overflow: hidden;
 }
 
 /*About us*/
@@ -360,7 +358,7 @@ footer{
     }
 
     .sonrisas div{
-        max-width: 100%;
+        width: 98%;
     }
     .slogan{
         left: 10%;
@@ -445,7 +443,7 @@ footer{
     }
 
     .sonrisas div{
-        max-width: 100%;
+        width: 98%;
     }
     .slogan{
         left: 10%;
@@ -527,7 +525,7 @@ footer{
     }
 
     .sonrisas div{
-        max-width: 49%;
+        width: 48%;
     }
 
     .slogan{
@@ -596,10 +594,6 @@ footer{
         font-size: 1.8rem;
     }
 
-    .sonrisas div img{
-        height: 17vh;
-    }
-
     /*Services*/
     #carouselExampleInterval div div img{
         height: 40vh;
@@ -622,10 +616,6 @@ footer{
     }
     .frasePublicitaria{
         font-size: 2.2rem;
-    }
-
-    .sonrisas div img{
-        height: 22vh;
     }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
