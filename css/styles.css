@@ -389,9 +389,18 @@ footer{
         justify-content: space-around;
     }
 
-    .imgStory,.story{
+    .story{
         width: 100%;
-        min-height: 90vh;
+        min-height: 100vh;
+    }
+
+    .imgStory{
+        width: 100%;
+        min-height: 50vh;
+    }
+
+    .textDeco{
+        font-size: 1.5rem;
     }
 
     /*Contact*/
@@ -418,6 +427,10 @@ footer{
 
     .logo{
         height: 40px;
+    }
+
+    .brand,.copyright{
+        font-size: 0.75rem;
     }
 
     /*Index*/
@@ -461,9 +474,18 @@ footer{
         justify-content: space-around;
     }
 
-    .imgStory,.story{
+    .story{
         width: 100%;
         min-height: 90vh;
+    }
+
+    .imgStory{
+        width: 100%;
+        min-height: 60vh;
+    }
+
+    .textDeco{
+        font-size: 1.8rem;
     }
 
     /*Contact*/
@@ -524,9 +546,14 @@ footer{
         justify-content: space-around;
     }
 
-    .imgStory,.story{
+   .story{
         width: 100%;
-        min-height: 90vh;
+        min-height: 75vh;
+    }
+
+    .imgStory{
+        width: 100%;
+        min-height: 80vh;
     }
 
     /*Contact*/
