@@ -21,7 +21,7 @@
     width: 100%;
     position: relative;
     background: linear-gradient(to right, transparent, white),
-    url("../img/fondo2.jpg");
+    url("../img/fondo.jpg");
     background-size: cover;
     min-height: 95vh;
 }
