@@ -336,9 +336,9 @@ footer{
 /*Media Queries*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 340px){
-    .navbar-bg-color{
+    /*.navbar-bg-color{
         background-color: fuchsia;
-    }
+    }*/
 
     .logo{
         height: 30px;
@@ -412,9 +412,9 @@ footer{
 }
 
 @media only screen and (max-width: 600px) and (min-width: 340px) {
-    .navbar-bg-color{
+    /*.navbar-bg-color{
         background-color: violet;
-    }
+    }*/
 
     .logo{
         height: 40px;
@@ -481,12 +481,17 @@ footer{
         width: 100%;
         min-height: 80vh;
     }
+
+    .contact{
+        min-width: auto;
+    }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
-    .navbar-bg-color{
+    /*.navbar-bg-color{
         background-color: green;
-    }
+    }*/
+
     /*Index*/
     .sonrisas{
         flex-wrap: wrap;
@@ -543,9 +548,10 @@ footer{
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
-    .navbar-bg-color{
+    /*.navbar-bg-color{
         background-color: white;
-    }
+    }*/
+
     /*Index*/
     .slogan p{
         font-size: 2.2rem;
@@ -566,9 +572,10 @@ footer{
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
-    .navbar-bg-color{
+    /*.navbar-bg-color{
         background-color: red;
-    }
+    }*/
+
     /*Index*/
     .slogan p{
         font-size: 2.7rem;
@@ -579,7 +586,7 @@ footer{
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .navbar-bg-color{
+    /*.navbar-bg-color{
         background-color: blue;
-    }
+    }*/
 }
