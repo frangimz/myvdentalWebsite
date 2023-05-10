@@ -81,7 +81,7 @@ footer{
 }
 
 .pie div{
-    padding: 10px;
+    padding: 0 10px 0 10px;
 }
 
 .brand,.copyright{
@@ -102,7 +102,7 @@ footer{
 }
 
 .logoInsta{
-    width: 30px;
+    width: 40px;
 }
 
 .container-fluid{
