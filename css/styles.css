@@ -604,11 +604,6 @@ footer{
         font-size: 1.8rem;
     }
 
-    /*Services*/
-    #carouselExampleInterval div div img{
-        height: 40vh;
-    }
-
     /*About Us*/
     .story p {
         font-size: 0.75rem;
