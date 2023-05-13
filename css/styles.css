@@ -3,7 +3,7 @@
 }
 
 .navbar{
-    min-height: 10vh;
+    height: auto;
 }
 
 .navbar-bg-color{
@@ -24,7 +24,7 @@
     background: linear-gradient(to right, transparent, white),
     url("../img/fondoIndex/fondo4.jpg");
     background-size: cover;
-    min-height: 90vh;
+    min-height: 95vh;
 }
 
 .backg{
@@ -308,7 +308,7 @@ footer{
 }
 
 .telContact,.horaContact,.redesContact{
-    padding: 5px;
+    padding: 10px;
     width: 100%;
     display: flex;
     justify-content: center;
