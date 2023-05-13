@@ -308,7 +308,7 @@ footer{
 }
 
 .telContact,.horaContact,.redesContact{
-    padding: 10px;
+    padding: 5px;
     width: 100%;
     display: flex;
     justify-content: center;
